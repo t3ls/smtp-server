@@ -1,5 +1,5 @@
 # smtp-server
-t3ls's smtp server, originally created for the Computer Network
+t3ls's smtp server, originally created for the BUPT Computer Network
 
 ## Compile
 `gcc smtp_server.c -lssl -lcrypto -lpthread -o smtp`
