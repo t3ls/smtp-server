@@ -11,6 +11,7 @@
 #include <errno.h>
 #include <string.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 #include <netinet/in.h>
 #include <netinet/ip.h>
 #include <netdb.h>
@@ -285,6 +286,7 @@ int ssl_daemon(int client_sockfd) {
     bzero(mail_info.pwd, sizeof(mail_info.pwd));
 
     // Open log file
+    mkdir("log", 0755);
     strcat(log_path, "log/log-");
     time(&timestamp_tmp);
     timestamp = localtime(&timestamp_tmp);
@@ -575,6 +577,7 @@ int normal_daemon(int client_sockfd) {
     bzero(mail_info.pwd, sizeof(mail_info.pwd));
 
     // Open log file
+    mkdir("log", 0755);
     strcat(log_path, "log/log-");
     time(&timestamp_tmp);
     timestamp = localtime(&timestamp_tmp);
