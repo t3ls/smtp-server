@@ -1,6 +1,6 @@
 //
 // Project name: smtp-server
-// Describe: t3ls's smtp server, originally created for the Computer Network
+// Description: t3ls's smtp server, originally created for the Computer Network
 // Project address: https://github.com/t3ls/smtp-server
 //
 // Created at: 2018/12
