@@ -7,5 +7,5 @@ t3ls's smtp server, originally created for the BUPT Computer Network
 ## Run
 `sudo ./smtp`
 
-## Requirement
+## Requirements
 `sudo apt install -y gcc openssl libssl-dev`
